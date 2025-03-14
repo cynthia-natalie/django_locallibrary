@@ -1,0 +1,19 @@
+runtime: python312
+entrypoint: gunicorn locallibrary.wsgi:application
+
+handlers:
+- url: /static
+  static_dir: staticfiles
+- url: /.*
+  script: auto
+
+env_variables:
+  DEBUG: 'False'
+  DJANGO_SETTINGS_MODULE: 'locallibrary.settings'
+  DJANGO_CONFIGURATION: 'Production'
+
+instance_class: F1
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 2
