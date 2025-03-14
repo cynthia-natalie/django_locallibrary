@@ -19,3 +19,7 @@ https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server
    ```
 
 Access to `http://127.0.0.1:8000` to view the site
+
+## Video Demo
+
+Video Demo Link: https://drive.google.com/file/d/1OEzrbzON5fJ1xJycwZlEsK8oz1UyfGJV/view?usp=drive_link
